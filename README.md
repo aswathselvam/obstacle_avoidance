@@ -13,6 +13,11 @@ cd ws/src
 sudo apt-get install ros-${ROS_DISTRO}-turtlebot3-gazebo
 ```
 
+## Build project
+```
+catkin_make
+```
+
 ## Run simulation:
 ```
 roslaunch obstacle_avoidance obstacle_avoidance.launch
