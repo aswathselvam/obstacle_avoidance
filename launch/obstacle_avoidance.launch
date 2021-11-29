@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="platform_name" default="turtlebot3" />
+    <arg name="rosbag_record" default="false" doc="Set to true to record talker messages in bag file"/>
+
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_house.launch"/> 
+
+    <group> 
+    	<node pkg="obstacle_avoidance" type="obstacle_avoidance_node" name="obstacle_avoidance_node">
+        </node>
+	</group>
+
+    <node pkg="rosbag" type="record" name="rosbag_node" args="-a -O $(find obstacle_avoidance)/results/bagfile --duration=25 --exclude '/camera/*'"
+        if="$(arg rosbag_record)"/>
+ 
+</launch>

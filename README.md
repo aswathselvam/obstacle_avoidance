@@ -8,9 +8,15 @@ mkdir ws/src
 cd ws/src
 ```
 
-## Download TurtleBot simulation files:
+## Download file:
+TurtleBot simulation files:
 ```
 sudo apt-get install ros-${ROS_DISTRO}-turtlebot3-gazebo
+```
+Obstacle avoidance ROS package: \
+(Clone into ROS catkin workspace)
+```
+git clone https://github.com/aswathselvam/obstacle_avoidance.git
 ```
 
 ## Build project
@@ -34,7 +40,7 @@ rosbag play "path-to-bag-file"
 ```
 
 ## Example Bag file:
-Bag file [link]()
+Bag file [link](results/bagfile.bag)
 
 
 ## Code Formatting check 
