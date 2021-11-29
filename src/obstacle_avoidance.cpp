@@ -49,8 +49,8 @@ void Roam::Init() {
   this->vel_.angular.x = 0;
   this->vel_.angular.y = 0;
   this->vel_.angular.z = 0;
-  this->fov_degrees_ = 180;
-  this->threshold_ = 1;
+  this->fov_degrees_ = 125;
+  this->threshold_ = 0.5;
 }
 
 void Roam::Start() {
