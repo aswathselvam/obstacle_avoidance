@@ -7,6 +7,9 @@ From any desired directory
 mkdir ws/src
 cd ws/src
 ```
+In `.bshrc' file:
+1. Add `source desired-directory/devel/setup.bash` 
+2. Add `export TURTLEBOT3_MODEL=burger`
 
 ## Download file:
 TurtleBot simulation files:
